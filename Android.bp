@@ -2,3 +2,6 @@ subdirs = [
     "lights",
     "livedisplay"
 ]
+
+soong_namespace {
+}
