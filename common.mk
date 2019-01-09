@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc \
-    init.renderzenith.sh
+    init.kronic.rc
 
 # Display
 PRODUCT_PACKAGES += \
