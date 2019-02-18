@@ -52,6 +52,11 @@ on post-fs
     chown system system /sys/class/leds/vibrator/vmax_mv_call
     chown system system /sys/class/leds/vibrator/vmax_mv_strong
 
+    # RGB
+    chown system system /sys/module/msm_drm/parameters/kcal_red
+    chown system system /sys/module/msm_drm/parameters/kcal_green
+    chown system system /sys/module/msm_drm/parameters/kcal_blue
+
 on charger
     write /sys/class/backlight/panel0-backlight/brightness 150
 
