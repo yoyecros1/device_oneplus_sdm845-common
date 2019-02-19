@@ -45,8 +45,6 @@ import android.util.Log;
 
 public class PanelSettings extends PreferenceFragment implements RadioGroup.OnCheckedChangeListener {
     private RadioGroup mRadioGroup;
-    private RedPreference mRed;
-    private GreenPreference mGreen;
     private BluePreference mBlue;
 
     @Override
@@ -71,16 +69,6 @@ public class PanelSettings extends PreferenceFragment implements RadioGroup.OnCh
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        mRed = (RedPreference) findPreference(DeviceSettings.KEY_RED);
-        if (mRed != null) {
-            mRed.setEnabled(RedPreference.isSupported());
-        }
-
-        mGreen = (GreenPreference) findPreference(DeviceSettings.KEY_GREEN);
-        if (mGreen != null) {
-            mGreen.setEnabled(GreenPreference.isSupported());
-        }
-
         mBlue = (BluePreference) findPreference(DeviceSettings.KEY_BLUE);
         if (mBlue != null) {
             mBlue.setEnabled(BluePreference.isSupported());
