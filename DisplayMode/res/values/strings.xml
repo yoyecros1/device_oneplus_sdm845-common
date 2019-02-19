@@ -28,4 +28,10 @@
     <string name="off_mode_title">Off</string>
     <string name="tile_panel_mode">Panel modes</string>
     <string name="tile_hbm_mode">High brightness modes</string>
+
+    <!-- KCAL sliders -->
+    <string name="rgb_category">Advanced RGB adjustments</string>
+    <string name="red_slider">Red</string>
+    <string name="green_slider">Green</string>
+    <string name="blue_slider">Blue</string>
 </resources>

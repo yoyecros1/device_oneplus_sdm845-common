@@ -46,6 +46,10 @@ public class DeviceSettings extends PreferenceFragment {
     public static final String KEY_ADAPTIVE_SWITCH = "adaptive";
     public static final String KEY_ONEPLUS_SWITCH = "oneplus";
 
+    public static final String KEY_RED = "red_value";
+    public static final String KEY_GREEN = "green_value";
+    public static final String KEY_BLUE = "blue_value";
+
     private static TwoStatePreference mHBMModeSwitch;
 
 

@@ -89,4 +89,16 @@ limitations under the License
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </RadioGroup>
+
+        <org.lineageos.settings.DisplayMode.RedPreference
+            android:key="red_value"
+            android:title="@string/red_slider" />
+
+        <org.lineageos.settings.DisplayMode.GreenPreference
+            android:key="green_value"
+            android:title="@string/green_slider" />
+
+        <org.lineageos.settings.DisplayMode.BluePreference
+            android:key="blue_value"
+            android:title="@string/blue_slider" />
 </LinearLayout>
