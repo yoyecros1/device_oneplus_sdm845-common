@@ -69,6 +69,8 @@ public class PanelSettings extends PreferenceFragment implements RadioGroup.OnCh
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        addPreferencesFromResource(R.xml.rgb);
+        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         mBlue = (BluePreference) findPreference(DeviceSettings.KEY_BLUE);
         if (mBlue != null) {
             mBlue.setEnabled(BluePreference.isSupported());
