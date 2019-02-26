@@ -69,7 +69,8 @@ public class DozeService extends Service {
         if (Utils.isPickUpEnabled(this)) {
             mPickupSensor.disable();
         }
-        if (Utils.isPocketEnabled(this)) {
+        if (Utils.isPocketEnabled(this) ||
+                Utils.handwaveGestureEnabled(this)) {
             mPocketSensor.disable();
         }
     }
@@ -79,7 +80,8 @@ public class DozeService extends Service {
         if (Utils.isPickUpEnabled(this)) {
             mPickupSensor.enable();
         }
-        if (Utils.isPocketEnabled(this)) {
+        if (Utils.isPocketEnabled(this) ||
+                Utils.handwaveGestureEnabled(this)) {
             mPocketSensor.enable();
         }
     }

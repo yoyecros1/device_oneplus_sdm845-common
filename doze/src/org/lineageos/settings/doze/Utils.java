@@ -45,6 +45,7 @@ public final class Utils {
 
     protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
+    protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
 
     protected static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
@@ -111,6 +112,11 @@ public final class Utils {
 
     public static boolean areGesturesEnabled(Context context) {
         return isPickUpEnabled(context) || isPocketEnabled(context);
+    }
+
+    protected static boolean handwaveGestureEnabled(Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context)
+                .getBoolean(GESTURE_HAND_WAVE_KEY, false);
     }
 
     protected static Sensor getSensor(SensorManager sm, String type) {

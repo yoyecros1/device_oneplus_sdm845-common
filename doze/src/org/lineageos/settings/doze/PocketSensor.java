@@ -34,6 +34,10 @@ public class PocketSensor implements SensorEventListener {
     private static final boolean DEBUG = false;
     private static final String TAG = "PocketSensor";
 
+    // Maximum time for the hand to cover the sensor: 1s
+    private static final int HANDWAVE_MAX_DELTA_NS = 1000 * 1000 * 1000;
+
+    // Minimum time until the device is considered to have been in the pocket
     private static final int MIN_PULSE_INTERVAL_MS = 2500;
 
     private SensorManager mSensorManager;
@@ -60,6 +64,8 @@ public class PocketSensor implements SensorEventListener {
 
         long delta = SystemClock.elapsedRealtime() - mEntryTimestamp;
         if (delta < MIN_PULSE_INTERVAL_MS) {
+            return;
+        } else if (delta >= HANDWAVE_MAX_DELTA_NS) {
             return;
         }
 
