@@ -114,9 +114,8 @@ public final class Utils {
         return isPickUpEnabled(context) || isPocketEnabled(context);
     }
 
-    protected static boolean handwaveGestureEnabled(Context context) {
-        return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(GESTURE_HAND_WAVE_KEY, false);
+    protected static boolean isHandwaveGestureEnabled(Context context) {
+        return isGestureEnabled(context, GESTURE_HAND_WAVE_KEY);
     }
 
     protected static Sensor getSensor(SensorManager sm, String type) {
