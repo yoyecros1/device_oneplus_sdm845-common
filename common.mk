@@ -119,6 +119,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.qcom:64
 
+# Offmode charging
+ PRODUCT_PACKAGES += \
+     chargeonlymode
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
