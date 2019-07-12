@@ -129,7 +129,4 @@
 
     <!-- Whether to enable OP5/T OP cam hack -->
     <bool name="config_hasOnePlusCamera">true</bool>
-
-    <!-- Does device support ActiveEdge? -->
-    <bool name="config_hasActiveEdge">true</bool>
 </resources>
