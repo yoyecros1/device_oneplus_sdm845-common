@@ -130,9 +130,6 @@
     <!-- Whether to enable OP5/T OP cam hack -->
     <bool name="config_hasOnePlusCamera">true</bool>
 
-    <!-- Does device support ActiveEdge? -->
-    <bool name="config_hasActiveEdge">true</bool>
-
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
      -->
