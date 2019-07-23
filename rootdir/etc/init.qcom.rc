@@ -55,6 +55,10 @@ on post-fs
     write /sys/class/power_supply/usb/otg_switch 1
 
 on charger
+    # Smart charging
+    chown system system /sys/class/power_supply/battery/battery_charging_enabled
+    chown system system /sys/class/power_supply/battery/charging_enabled
+
     write /sys/class/backlight/panel0-backlight/brightness 150
 
 service dashd /sbin/dashd
