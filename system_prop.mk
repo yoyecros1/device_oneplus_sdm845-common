@@ -87,3 +87,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SSR
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
+	
+# Fingerprint system props for FOD location (OP6T) 
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.vendor.sys.fp.fod.location.X_Y=444,1966 \
+	persist.vendor.sys.fp.fod.size.width_height=190,190
